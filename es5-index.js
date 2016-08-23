@@ -1,7 +1,12 @@
-var Demo = function() {
-  this.wow = "wow"
+var Demo = function(wowString) {
+  this.wow = wowString
 }
 
-var d = new Demo()
+Demo.prototype.printWow = function() {
+  console.log("I am printing " + this.wow)
+}
 
-console.log(d.wow)
+var d = new Demo("wow")
+
+d.printWow()
+// regular old functions below

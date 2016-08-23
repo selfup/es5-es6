@@ -1,11 +1,14 @@
 class Demo {
-  constructor() {
-    this.wow = "wow"
+  constructor(wowString) {
+    this.wow = wowString
+  }
+
+  printWow() {
+    console.log(`I am printing ${this.wow}`)
   }
 }
 
-const d = new Demo()
+const d = new Demo("wow")
 
-console.log(d.wow)
-
+d.printWow()
 // regular old functions below
