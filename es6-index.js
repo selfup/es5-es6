@@ -7,3 +7,5 @@ class Demo {
 const d = new Demo()
 
 console.log(d.wow)
+
+// regular old functions below
